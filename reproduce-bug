@@ -1,0 +1,4 @@
+nix-build -A ghc.dec              # works
+nix-build -A ghcjs.dec            # works
+nix-build -A ghc.singleton-bool   # works
+nix-build -A ghcjs.singleton-bool # errors - Setup: Encountered missing dependencies: dec >=0.0.3 && <0.1
